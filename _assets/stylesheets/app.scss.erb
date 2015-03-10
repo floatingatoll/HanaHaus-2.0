@@ -5,3 +5,63 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "bootstrap";
+
+// override bootstrap
+@import "btn";
+@import "tabs";
+
+//
+// CUSTOM STYLES
+//
+
+#header {
+    background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(<%= asset_path "header.png" %>) no-repeat center center;
+    background-size: cover;
+}
+
+#work, #learn, #play {
+    position: relative;
+    overflow: hidden;
+
+    .img {
+        position: absolute;
+        height: 100%;
+    }
+}
+
+#work .img {
+    background: url(<%= asset_path "work.jpg" %>) no-repeat center center;
+    background-size: cover;
+    right: 0;
+}
+
+#learn .img {
+    background: url(<%= asset_path "learn.jpg" %>) no-repeat center center;
+    background-size: cover;
+}
+
+#play .img {
+    background: url(<%= asset_path "play.jpg" %>) no-repeat center center;
+    background-size: cover;
+    right: 0;
+}
+
+#footer {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #f2f2f2;
+}
+
+//
+// GLOBAL STYLES
+//
+
+body {
+    font-weight: 200;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
