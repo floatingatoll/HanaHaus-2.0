@@ -1,0 +1,35 @@
+a.social {
+
+  display: block;
+  padding: 50px 0;
+
+  .fa {
+    color: #6C6D6D;
+  }
+}
+
+a span {
+  opacity: 0;
+  transition: opacity .15s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  span {opacity: 1;}
+}
+
+a:hover .fa-twitter {
+  color: #1EA9E1;
+}
+
+a:hover .fa-instagram {
+  color: #37598A;
+}
+
+a:hover .fa-facebook {
+  color: #37598A;
+}
+
+a:hover .fa-yelp {
+  color: #CB3E27;
+}
